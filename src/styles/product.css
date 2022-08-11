@@ -1,0 +1,114 @@
+.cart-item {
+  display: flex;
+  padding: 20px 0;
+}
+.cart-item-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+  background-color: #eee;
+  margin-right: 34px;
+}
+.cart-item-img-block img {
+  display: block;
+  width: 140%;
+  transform: rotate(-28deg) translateY(-40px);
+  filter: drop-shadow(0 30px 20px rgba(0, 0, 0, 0.2));
+}
+.cart-item-name {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+.cart-item-price {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.cart-item-count {
+  flex: 1;
+}
+.cart-item-actions {
+  display: flex;
+}
+.cart-item-count {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.cart-item-count-button {
+  cursor: pointer;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  border-radius: 100%;
+  background-color: #eee;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.cart-item-count-number {
+  font-size: 14px;
+  margin: 0 8px;
+  width: 20px;
+  text-align: center;
+}
+.cart-item-remove {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f6c90e;
+  transition: 0.2s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.cart-item-remove img {
+  width: 16px;
+  height: 16px;
+}
+.cart-item-right {
+  flex: 1;
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .cart-item-name {
+    font-size: 22px;
+  }
+  .cart-item-price {
+    font-size: 24px;
+  }
+  .cart-item-count-button {
+    width: 38px;
+    height: 38px;
+  }
+  .cart-item-count-number {
+    font-size: 16px;
+  }
+  .cart-item-remove {
+    width: 40px;
+    height: 40px;
+  }
+  .cart-item-img {
+    margin-right: 90px;
+    width: 120px;
+    height: 120px;
+  }
+  .cart-item-img-block img {
+    width: 160%;
+    transform: rotate(-28deg) translateY(-72px);
+  }
+}

@@ -1,0 +1,172 @@
+.shoe {
+  padding: 40px 0;
+}
+.shoe-img {
+  border-radius: 30px;
+  height: 380px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.shoe-img img {
+  display: block;
+  width: 100%;
+  filter: drop-shadow(0 30px 20px rgba(0, 0, 0, 0.2));
+  transform: rotate(-24deg);
+  margin-left: -16px;
+}
+.shoe-name {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 26px 0 20px;
+  line-height: 1.5;
+}
+.shoe-description {
+  font-size: 13px;
+  color: #777;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+.shoe-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.shoe-price {
+  font-weight: 700;
+  font-size: 18px;
+}
+.shoe-button {
+  cursor: pointer;
+  background-color: #f6c90e;
+  font-weight: 700;
+  font-size: 14px;
+  box-sizing: border-box;
+  width: auto;
+  height: 46px;
+  min-width: 46px;
+  padding: 16px 20px;
+  border-radius: 100px;
+  transition: all 0.25s ease;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.shoe-button:hover {
+  background-color: #f8d43f;
+  box-shadow: -2px 2px 4px rgb(0 0 0 / 15%);
+}
+.shoe-button-cover {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shoe-button-cover-check-icon {
+  width: 100%;
+  height: 100%;
+  transform: translate(-100%, -73%) rotate(-45deg);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+.shoe-button.inactive {
+  width: 46px;
+  pointer-events: none;
+  cursor: default;
+}
+
+.shoe-button-cover-check-icon::after,
+.shoe-button-cover-check-icon::before {
+  content: "";
+  display: block;
+  background-color: #303841;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 10px;
+}
+.shoe-button-cover-check-icon::before {
+  width: 3px;
+  height: 50%;
+}
+.shoe-button-cover-check-icon::after {
+  width: 100%;
+  height: 3px;
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .shoe-img {
+    height: 420px;
+  }
+  .shoe-img img {
+    transform: rotate(-20deg);
+  }
+  .shoe-name {
+    font-size: 24px;
+  }
+  .shoe-description {
+    font-size: 14px;
+  }
+  .shoe-price {
+    font-size: 24px;
+  }
+}
+@media (min-width: 600px) and (max-width: 768px) {
+  .shoe-img {
+    height: 420px;
+  }
+  .shoe-img img {
+    transform: rotate(-20deg);
+  }
+  .shoe-name {
+    font-size: 24px;
+  }
+  .shoe-description {
+    font-size: 14px;
+  }
+  .shoe-price {
+    font-size: 24px;
+  }
+}
+@media (min-width: 375px) and (max-width: 500px) {
+  .shoe-img {
+    height: 260px;
+  }
+  .shoe-name {
+    font-size: 20px;
+  }
+  .shoe-description {
+    font-size: 12px;
+  }
+  .shoe-price {
+    font-size: 20px;
+  }
+  .shoe-button {
+    height: 40px;
+  }
+}
+@media (min-width: 320px) and (max-width: 420px) {
+  .shoe-img {
+    height: 260px;
+  }
+  .shoe-name {
+    font-size: 14px;
+  }
+  .shoe-description {
+    font-size: 12px;
+  }
+  .shoe-price {
+    font-size: 20px;
+  }
+  .shoe-button {
+    height: 38px;
+  }
+}
