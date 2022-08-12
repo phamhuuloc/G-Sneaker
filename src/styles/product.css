@@ -112,3 +112,40 @@
     transform: rotate(-28deg) translateY(-72px);
   }
 }
+@media (min-width: 600px) and (max-width: 768px) {
+  .cart-item-name {
+    font-size: 18px;
+  }
+  .cart-item-remove {
+    width: 38px;
+    height: 38px;
+  }
+}
+@media (min-width: 375px) and (max-width: 500px) {
+  .cart-item-name {
+    font-size: 15px;
+  }
+  .cart-item-remove {
+    width: 34px;
+    height: 34px;
+  }
+  .cart-item-price {
+    font-size: 16px;
+  }
+}
+@media (min-width: 320px) and (max-width: 400px) {
+  .cart-item {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cart-item-name {
+    font-size: 16px;
+  }
+  .cart-item-right {
+    margin-top: 14px;
+  }
+  .cart-item-remove {
+    width: 34px;
+    height: 34px;
+  }
+}
